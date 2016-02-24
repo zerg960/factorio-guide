@@ -1,0 +1,139 @@
+---
+layout: default
+title: Trains
+---
+
+<p>Not only are trains awesome in real life, they are pretty cool in Factorio as well. The purpose of trains in the game is essentially what they are for in the real world. They are by far the best option for transporting large amounts of resources over great distances. </p>
+
+<p>Trains do have their pros and cons, but the pros usually far outweigh the cons when considering them for transporting things over a long distance. It is a fairly large investment both in time and resources to get your first rail and train system set up, but it's usually worth it in the long run because you can bring large quantities of resources back to your base from pretty much anywhere on the map using trains.</p>
+
+<p>There are two components to the trains themselves, the <strong>Locomotives</strong> and the <strong>Cargo Wagons</strong>. The cargo wagons can hold anything except liquids, so you can use them not only for resources but for resupplying outposts and many other things. The Cargo Wagons also have 20 slots in them, so they can hold a lot of stuff.</p>
+
+<p>Setting up a rail network and getting it to work properly can be a bit confusing your first time. I will go through it step by step though to try and make it less confusing.</p>
+
+<p>There are two types different rail pieces, straight ones and curved ones. The curved pieces can be rotated (with R) in many different angles in order to achieve the turns and connections that you want. Laying the rails themselves is pretty self-explanatory for the most part. One thing that might not seem obvious at first is that sometimes you have to add a straight rail piece when laying down curves in order for everything to connect. Below is a picture of how it looks initially, and how it looks after you add the extra rail. The train won't move past this circled part in the first example, so you have to add that extra rail to make it all actually connect.</p>
+
+
+
+
+<div class="col-wrapper">
+
+<div class="caption-combo-left">
+<div class="caption-wrap">
+<div class="caption-image"><img src="img/40.jpg" width="455"  /></div>
+<div class="caption-text-two-col">
+<p>Whenever you see that the ends of two connecting pieces are actually showing like in the picture, you need to add that extra rail. </p>
+</div>
+</div>
+</div>
+
+<div class="caption-combo-right">
+<div class="caption-wrap">
+<div class="cont-image"><img src="img/41.jpg" width="455" /></div>
+<div class="caption-text-two-col">
+<p>The next most important thing after putting down the rail system is adding the Train Stops. It is extremely important that you put the Train Stop on the correct side of the track, otherwise the trains won't go to them and will just flash a "no path" error. The stop must always be on the right hand side of the track as seen from the train's perspective.</p>
+</div>
+</div>
+</div>
+
+</div>
+
+<br />
+<div class="cont-left"><img src="img/42.jpg" width="380" height="374" /></div>
+
+
+<p>The Train Stops can be given a custom name by clicking on them and giving a name in the specified field. </p>
+
+<p>Once you have two Train Stops, with one at the pickup area and one at the drop-off area you need to tell your Trains to actually go back and forth automatically. Do this by clicking on the Locomotive and clicking on the station you want it to go to first, and then hit the "+" button. Then just do the same for the second stop.  You can also set the amount of time that it stays at each station.</p>
+
+
+
+
+<p>After having your Train Stations set up and setting the schedule in the Locomotives you need to actually build the loading and unloading part of each station. The Cargo Wagons can be loaded with Inserters just like anything else. You can "technically" have about 6-7 Inserters per side of the Cargo Wagon, but this makes for some weird behavior with how the Inserters work. I think 4-5 is a good number and loads it quick enough if you are pulling the items from a chest, and get the Inserter Stack Bonus.</p>
+
+<br />
+
+<div class="cont-center"><img src="img/43.jpg" width="509" /></div>
+
+<div class="cont-center"><img src="img/44.jpg" width="509" /></div>
+
+<div class="cont-center"><img src="img/45.jpg" width="509"  /></div>
+
+<p>It is important to have the Inserters that load/unload the Cargo Wagon grab from chests or put into chests rather than just the belts, because this allows them to grab more with the Inserter Stack Size bonus since the wagons are considered a container or chest. </p>
+
+<h2>Signals</h2>
+
+<p>Train Signals are what will allow multiple trains to use the same line/track. If you don't have Signals in place and have more than one train that uses the same track, you will almost definitely end up with a Train crash at some point.</p>
+
+
+
+<p>There are two types of Signals; The normal <strong>Rail Signals</strong> and <strong>Chain Signals</strong>. They are very similar but the Chain Signals do some more advanced things. Rail Signals work by creating "blocks" on the track between each signal, and whenever there is something occupying one of the blocks, the signals on each side will turn red and not let any other Trains enter. This may sound simple at first, but it can get a bit complicated once you get into advanced rail networks and especially junctions.</p>
+
+<div class="cont-left"><img src="img/46.jpg" width="439" height="135" /></div>
+
+
+<p>The Rail Signals need to go on the correct side of the track in order to work for trains going a certain direction. You can tell which way the signal is pointing by the yellow arrows that show up on the track when it is placed.</p>
+
+
+<p>If you place a signal down and never add another one at some point after it, the signal will just flash because the "block" hasn't been completed or closed by a second signal. The "blocks" can be quite large though if you want them to be, it really just depends how far apart you place the signals. Putting signals too close together can cause problems, especially on intersections or junctions because it will cause deadlocks between trains sometimes. On a straight-away you can space them out pretty far without many problems, but they need to be placed in a more specific way in loops or junctions. Here is an example of a <strong>bad</strong> way to signal for a roundabout/loop. </p>
+
+<div class="cont-center"><img src="img/47.jpg" width="800" height="500" /></div>
+
+<p>This is bad because with so many signals placed in the way that they are, it can easily cause deadlocks with trains getting stuck in-between the signals and infinitely being stuck in the circle.</p>
+
+<p>Now here is good way to signal in that same roundabout. </p>
+
+<div class="cont-center"><img src="img/48.jpg" width="557" height="420" /></div>
+
+<p>This setup is not perfect; however it is far better than the previous example. With this setup, if there is a train in the circle already, the signals stop any other trains from entering at all until the current train as left the circle. This will create a little more of a delay since the trains have to wait longer, but this is probably better than getting deadlock situation in the roundabout. The reason there is a signal on both sides of each track is in case you have trains going both directions on each line so it covers the exit direction and the entrance direction.</p>
+
+<p>Not only are Rail Signals good to have on the main track, it is pretty important to have them at the entrance and exit of a Train Station. The signal at the entrance will stop other trains from going into the station while one train is already parked there. The one at the exit will stop the train currently in the station from pulling onto the track while another train is passing right in front of the exit. </p>
+
+<div class="cont-center"><img src="img/49.jpg" width="950"  /></div>
+
+<p>The entrance Signal is placed inside the station area rather than on the main line so that when a train stops at it the train isn't blocking the main line. Notice how it is red though because the train in front is currently occupying the actual station. It will turn green once that rain leaves the "block" created by the entrance and exit Signals. Also notice how the exit Signal is red because there is another train in the way of the exit onto the main line. Once that second train moves out of the way the exit Signal will turn green and let the train out. </p>
+
+<p>At the end of this Trains section there will be some links to videos or written explanations that explain using signals in more advanced situations. </p>
+
+<p>Chain Signals work almost the same way as the normal Rail Signals. While normal signals only prevent trains from entering the occupied block made from the signal, Chain Signals will prevent a train from entering when the exit is also not free. The Chain Signals also take into account whether or not there is more than one exit, and if one of the exits that is relevant to where the train is going is free then the Chain Signal will let it go that way instead. Here is an example of when they would be really useful.</p>
+
+<p>For this example the train at the first station wants to go to the second station but can't because the other train is there. The Chain Signal prevents train 1 from ever leaving the station until the second station is open. Without this Chain Signal train 1 would go wait at the Signal and would be blocking the main line. Obviously is the stations where farther away</p>
+
+<div class="cont-center"><img src="img/50.jpg" width="823" height="256" /></div>
+
+<p>from the main line this wouldn't be a problem anyway, but this is just an example.</p>
+
+<div class="xtrainfo">For some more examples of Chain Signals, here are two links. The first one is to a Factorio Friday Facts where the Chain Signals are actually explained by the Devs. The second is a Reddit post with some examples. <ul>
+<li><a href="https://www.factorio.com/blog/post/fff-81" target="_blank">Factorio Friday Facts</a></li>
+<li><a href="https://www.reddit.com/r/factorio/comments/3drcs2/uses_for_chain_signals/" target="_blank">Reddit</a></li>
+</ul></div>
+
+<p>Hopefully now you have a fairly good understanding of how Trains work and how to signal for them, at least in basic situations. Here are some example pictures of junctions for when you start using multiple trains on the same set of tracks. </p>
+
+<p>The above picture is a simple T Junction that has the Drive on Right format. It uses three</p>
+
+<div class="cont-center"><img src="img/51.jpg" width="651" height="699" /></div>
+
+<p>Chain Signals, with one on each of the entrances to the intersection. The rest are just normal Signals.</p>
+
+<p>This example has a large 4-way crossing junction. Right turns in this layout use the center lanes, through traffic uses the straight tracks outside from that, and left turns use the rail on very edge that are seen at the corners of the picture.</p>
+
+<div class="cont-center"><img src="img/52.jpg" width="846" height="713" /></div>
+
+<p>The examples shown above are just a few of many ways you can lay out junctions and crossings. These two examples were taken from the Imgur album of Train Junctions that is linked below. There are many more like this in that album.</p>
+
+<div class="xtrainfo">If you want some more advanced information on Trains here are some good videos. Even though they are a bit outdated, the same concepts still apply. 
+<ul>
+<li><a href="http://imgur.com/a/CxXxd" target="_blank">A picture album full of different junctions and crossings.</a></li>
+
+<li><a href="https://www.youtube.com/watch?v=ps423d2WisY" target="_blank">Goes over Chain Signals in more depth.</a></li>
+
+<li><a href="https://www.youtube.com/watch?v=P_KU_BP4Z6U" target="_blank">Basic Train Tutorial.</a></li>
+
+<li><a href="https://www.youtube.com/watch?v=2XOt0L5_xy8" target="_blank">Tutorial on Multi-train networks and signals.</a></li>
+
+<li><a href="https://www.youtube.com/watch?v=XSGYSbEPpbM" target="_blank">Another great Train Tutorial.</a></li>
+
+<li><a href="https://www.youtube.com/watch?v=k6wxl4FdSuQ" target="_blank">Part 2 to above video, goes over signals.</a></li>
+</ul>
+</div>

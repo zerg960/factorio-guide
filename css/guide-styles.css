@@ -7,17 +7,12 @@ body {
 }
 
 
-#header, #wrapper, #footer {
-    width: 60em;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 #header {
     font-family: Titillium web;
-    background: #ccc none repeat scroll 0 0;
-    height: 128px;
+    background: #fff none repeat scroll 0 0;
+    height: 164px;
     left: 0;
     position: fixed;
     top: 0;
@@ -25,16 +20,17 @@ body {
 }
 
 #header h1 {
-    margin: 0;
-    padding-top: 15px;
+    width:100%;
+	text-align:center;
+	margin-top: 128px ;	
 }
 
-main {
-    padding-bottom: 10010px;
-    margin-bottom: -10000px;
+main, #title {
+	box-sizing: border-box;
     float: left;
     width: 100%;
     font-family: Titillium web;
+	padding-left: 256px;
 }
 
 
@@ -67,11 +63,13 @@ main {
 }
 
 #content {
-    margin-left: 256px; /* Same as 'nav' width */
     margin-top: 128px;/* same as header height */
     padding-bottom: 100px; /* same as footer height */
     scroll-behavior: auto; /* just in case */
-    max-width: 1000px; /*not sure about it.. but very useful*/
+    max-width: 100%; /*not sure about it.. but very useful*/
+	width:1000px;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 .innertube {

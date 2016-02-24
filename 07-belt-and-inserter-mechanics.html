@@ -1,0 +1,164 @@
+---
+layout: default
+title: Belt and inserter mechanics
+---
+<h2>Belts</h2>
+<p>This may very well be one of the most important sections of this guide. Transport Belts and Inserters are the key components that will allow you to truly automate things in Factorio, and once you really learn how they work the possibilities are almost endless! However, understanding the little quirks and intricacies of these items can be a bit confusing sometimes. So without further ado lets get into how Transport Belts and Inserters work.</p>
+<p>Transport Belts do what their name might indicate and transport items around. They have two  "lanes" or sides in which items can travel on, so you can have a belt full of one type of resource taking up both sides, or you can have two separate resources with one in each lane:</p>
+<div class="cont-center"><img src="img/5.jpg" width="960" alt="trabsport belts" longdesc="img/5.jpg" /></div>
+
+<p>You might be wondering how you can get two different resources on a belt. Well there are many ways to do it. You can do it with Inserters, or via side loading/side merging. When you have a belt moving in one direction, and make another belt run into it from another direction, all items from the second belt will go onto the close side of the first belt that it hits.</p>
+
+<div class="cont-left"><img src="img/6.jpg" width="413" height="253" /></div>
+
+<p>One very important thing to note though is that this method only works if you have one extra tile of belt before the point where you are merging. You can notice in the picture that there is one extra belt to the left of where the second belt hits the first belt. If you don't do this, then the second belt will just connect normally with the first belt and make a turn, resulting in the items from the top lane of belt 2 going to the top lane of belt 1, and bottom lane to bottom lane.</p>
+
+<p>Now that we know the basics of how Transport Belts work, it is time to get into the more complicated things like using <strong>Underground Belts</strong> and <strong>Splitters</strong>.</p>
+
+<br />
+
+<p><strong>Underground Belts</strong> actually aren't that complicated themselves. Essentially they allow you to run a belt underground. An Underground Belt's max reach is only four tiles though. Even so, Underground Belts can be extremely useful for routing belts around your factory. They can allow you send belts under Assembling Machines, or under other belts or pretty much anything that is four tiles or less. You can also connect one Underground Belt to another one, so if need be you can just do one after the other after the other. Here is a picture of some applications where they are can be useful: </p>
+
+<div>
+<div class="cont-left"> <img src="img/7.jpg" width="413" /></div>
+
+<p>Obviously you cannot interact with the belt while it's underground, so no grabbing things off it with an Inserter or side loading onto it when it's underground. However, you can have an Inserter grab from it at each of the openings right before it goes underground. This is important to remember, as it can sometimes be the only way to get things to work if you have a particularly messy factory.</p>
+</div>
+
+
+<p>One other thing to keep in mind about using Underground Belts is that you can actually make a belt go underground right before a Splitter and it won't actually connect to the Splitter even though it is butted right up to it. This will be explained more in the following section about Splitters.</p>
+
+
+<div class="cont-left"><img src="img/8.jpg" width="413"  /> </div>
+<p>Splitters are another component of the belt family and are perhaps even more useful than Underground Belts. The Splitters do exactly what their name says, they split resources on belts. To be more precise, they split a belt exactly in half, sending 50% down each of the two lanes of the Splitter. Like so: </p>
+<p><img src="img/9.jpg" width="469" height="125" longdesc="img/9.jpg" /></p>
+
+<p>This is pretty much essential for getting resources around your base, because it allows you to take a single belt of resources and send it in multiple directions evenly. One other behavior of Splitters to keep in mind is that they will always send items down the same side of the belt that they entered on.</p> 
+
+<br />
+<br />
+
+<div>
+<div class="cont-right"><img src="img/10.jpg" width="582"  /></div>
+<p>So for example if you have a belt of Copper, but all of it is only on the bottom side of the belt, and you put a Splitter in, the Splitter will divide the belt equally but the Copper will still stay on the bottom side of the belts even after being split. </p>
+</div>
+
+<div>
+<div class="cont-right"><img src="img/11.jpg" width="582"  /></div>
+<p>Now as you might imagine, you can use multiple Splitters one right after the other which pretty much keeps reducing each lane to a smaller fraction. So for example, if you use three Splitters one right after the other, the result would be four different lanes, each one getting 25% of the original 100% from the main belt. Here is a picture demonstrating something like that:</p>
+</div>
+
+<br />
+
+<div>
+<div class="cont-right"><img src="img/12.jpg" width="582" height="219" /></div>
+<p>So now you that know how Splitters work in general, there are a few other nifty things you can do besides just splitting a belt. Probably the most important use besides their primary function is using them to merge two belts together. If you remember above, I explained side loading with belts and how that works. There are many situations in which you don't want to side load, and using a Splitter is better. </p>
+</div>
+
+<br />
+
+<div>
+<div class="cont-right"><img src="img/13.jpg" width="582"/></div>
+<p>For example, say you want to merge one line of Copper onto another line of Copper in order to have all of it on one belt, you can use a Splitter to do it. Like so:</p>
+<p>Now at first glance you might think that it is only taking 50% of the second line and putting it on the main line, but that actually isn't the case. If the resources on one line of Splitter are not being used/are backed up, then 100% of the input goes to the other line. So since the output on the bottom side of the Splitter isn't being used, then 100% of the Copper from line two goes to the top side of the Splitter and merges onto line one of Copper. So this is probably the most effective way of merging two lines together completely. However you do want to be careful with this, because if you try to merge belts with different items, or with one belt having two different items and the other having only one type of item, things get really messy... </p>
+
+</div>
+
+<p>There are applications for this sometimes, for example, if you want to do a mixed smelting area where you use Smart Inserters to sort the items but that is fairly complicated and I won't get into that in this guide.</p>
+
+<br />
+
+<div>
+<div class="cont-right"><img src="img/14.jpg" width="582" /></div>
+<p>Last is the ability to balance belts using Splitters. There are two main applications for this. The first one is taking a belt with resources only on one side of it and making them go to both sides evenly. It's actually quite simple as you can see below:</p>
+</div>
+
+
+<p>This works because the Splitter is sending 50% of the Iron forward, and 50% to the bottom side. Also remember as I explained earlier that the resources stay on the side of the belt they came in on. We use the side loading trick though to merge the bottom line of the splitter back onto the main line, and since it is side loading, it only goes to the bottom and now the belt has items on both sides split equally to each side. </p>
+
+
+<div>
+<div class="cont-right"><img src="img/15.jpg" width="582"/></div>
+<p>Now if you want to balance a full belt with items on both sides, you can do something similar. Again, it takes advantage of the side loading method. </p>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div>
+<div class="cont-right"><img src="img/16.jpg" width="582" longdesc="img/16.jpg" /></div>
+<p>This is pretty self-explanatory, but again the Splitter is sending 50% to both the top and bottom lanes, and those are then both side loaded onto another belt that is now equally balanced. You can also balance two lines that are right next to each other as well (picture below).</p>
+</div>
+
+<br />
+<p>This pretty much covers it for the basics of Splitters. Obviously you can do very complicated balancers and splits if you want. </p>
+
+<div class="xtrainfo">Here is a <a href="https://www.reddit.com/r/factorio/comments/3fq3cc/count_perfect_n_to_m_belt_balancers/" target="_new">Reddit post</a> by a very experienced player that goes over multiple balancers and splitting designs that are all great </div>
+
+<h2>Inserters</h2>
+<div class="cont-special">
+<div class="cont-right"><img src="img/17.jpg" width="250"   /></div>
+<p>Inserters are a very integral part of Factorio, because they are what allow you to actually have things automatically moved into Assembling Machines or chests or onto Transport Belts. There are five types of Inserters and each one does something a little different, but at their most basic level all of them pick up items and drop them into or onto something. Inserters will grab an item from in front of them, whether it is in a chest, Assembling Machines or on a belt, and it will place it behind itself. So to put it another way, they can only move in 180 degree motions. </p>
+</div>
+
+<br />
+
+<p>As mentioned above there are five different types of Inserters in the game:</p>
+<div class="cont-left"><img src="img/18.jpg" width="493" height="294" longdesc="img/18.jpg" /></div>
+<p>First we have the <strong>Basic Inserter</strong>, and it actually doesn't do anything special besides the standard job of picking up an item and moving it. The second type is the <strong>Burner Inserter</strong>. This one does what the Basic Inserter does but it doesn't require any electricity. It is powered by fuel, so Coal, Wood, or Solid Fuel, and it will feed itself as long as there is fuel in front of it.
+These Inserters are great to use before you get power set up, or even afterward they can be good for things like fueling your Boilers that feed your Steam Engines, or feeding the furnaces in a smelting setup. They are a good alternative to a Basic Inserter if you don't want to or can't use electricity for some Inserters. </p>
+
+<p>Next there is the <strong>Fast Inserter</strong>, and this one does exactly what the first one does but quite a bit quicker. These are useful for times when you need to move a lot of items quickly, or multiple different items from the same place. The third type of Inserter is the <strong>Long Handed Inserter</strong>. As the name suggests, it has a longer reach than any of the other types. In fact it can reach twice as far as the other Inserters, which can be very useful for grabbing belts that are a bit farther away or placing something into a chest that is on the other side of a belt for example. </p>
+
+<p>Last, but certainly not least is the <strong>Smart Inserter</strong>. This bad boy has a lot of really cool features. Not only does it move as quickly as a Faster Inserter, it can also be told to only grab specific items. This become invaluable sometimes when you have a mixed belt of different items, or a chest full of different items, but only want one or two specific items to be grabbed. There are actually five different slots for this, so you can have 5 different items set for the Inserter. On top of all that, you can also program one to work in conjunction with the Logistic Network, and/or a wire condition you set in the Circuit Network. These things will be explained later in the guide.</p>
+
+<p>Now that you know how Inserters work in general, it is time to get into the more detailed intricacies of how they actually work. See, Inserters actually have a very specific way in which they grab or place items, and it's quite important to know how this works otherwise things can get very confusing for you. Let's start with how they place items…</p>
+
+<div>
+<div class="cont-left"><img src="img/20.jpg" width="493" /></div>
+<p>All four types of Inserters do this the same way, so there is no need to worry about different kinds doing it differently. Inserters will always place things on the far side of a belt that is moving perpendicular to them. </p>
+</div>
+<br />
+
+
+<p>This is hard coded into the game so you can't change this without adding mods. It is a bit of a different story when placing something onto a belt moving in straight line away from the Inserter. The easiest way to explain it is that the Inserter will place on the bottom side of the belt when the belt is moving away towards the right, and it will place on the top side when the belt is moving away towards the left. .</p>
+
+
+<div class="cont-special">
+<div class="cont-right"><img src="img/21.jpg" width="220" /></div>
+<p>If the belt is moving up it is same as if it was moving left, and if the belt is moving down it is the same as if it was moving right.</p>
+<p>So right/down it puts it on what would be the bottom side, left/up it puts it on what would be the top side.
+You can really take advantage of this specific behavior when planning not only where your belts go, but what items are on them.</p> 
+</div>
+
+
+<br />
+
+
+<div>
+<div class="cont-left"><img src="img/22.jpg" width="493" /></div>
+<p>Things aren't quite as strict when it comes to how they pick up or grab things. However, the Inserters do have a preference for this. They can grab from either side of a belt, but do prioritize grabbing from the side closest to them first until they can't anymore.</p>
+</div>
+
+
+<p>So in other words, they will always grab from the close side of a belt if there are resources available on that side, and if there aren't then they will grab from the far side of a belt if they have to.  While this doesn't matter a lot most the time, it can come into play sometimes because it can cause your belts to become unbalanced since the Inserters will always be taking the resources from the closest side first. Again, not a huge deal but I thought it was worth mentioning. Obviously there is no such issue when grabbing from a chest or Assembler since they just act as containers. </p>
+
+<p>The last subject to touch on is how many items Inserters can move at once. As far as the different types of Inserters, there is no difference between them in this regard. They can all pickup or hold the same amount of items. When moving things to or from a belt, they can only grab one item at a time, and this can't be changed. However when moving to or from a container (chest, Assembling Machine, or Train Cargo Wagon) to another contain, there is Research that can be done to increase the number of things they can grab at once. The Research is called Inserter Stack Size Bonus, and for each level of this that you Research it allows Inserters to grab one extra item when grabbing or placing to a container. There are four different levels of this Research that can be done. Being able to move extra items at a time becomes extremely useful when unloading/loading trains or creating items in Assemblers that require a lot of ingredients. Just remember that the Inserter has to be grabbing or placing from/to a chest or another Assembler for this to work. </p>
+
+<p>That about covers it for Inserters and how they work. Once you understand all the behaviors of how they work, you can really build amazing factories and eventually get everything automated if you choose!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
