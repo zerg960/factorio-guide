@@ -42,7 +42,7 @@ main, #title, #logo {
     box-sizing: border-box;
     float: left;
     width: 100%;
-    padding-left: 256px;
+    padding-left: 280px;
     padding-top: 1em;
 }
 
@@ -54,7 +54,7 @@ main, #title, #logo {
     position: fixed;
     top: 128px;
     width: 256px;
-    padding-left: 1.5em;
+    padding-left: 24px;
 }
 
 #footer {
