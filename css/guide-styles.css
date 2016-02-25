@@ -1,23 +1,19 @@
 html {
-background-color: #4e4e4e;	
+    background-color: #4e4e4e;
 }
 
 
 body {
     margin:0;
     padding:0;
-    font-family: Sans-Serif;
+    font-family: Titillium web, Sans-Serif;
     line-height: 1.5em;
     padding-top: 5em;
 }
 
-
-
-
 #header {
-    font-family: Titillium web;
     background: #4e4e4e none repeat scroll 0 0;
-    height: 164px;
+    height: 178px;
     left: 0;
     position: fixed;
     top: 0;
@@ -26,32 +22,31 @@ body {
 
 #header h1 {
     width:100%;
-	text-align:center;
-	margin-top: 128px ;	
-	
+    text-align:center;
+    margin-top: 128px;
+
 }
 
 h1, h2 {
-	color: #ff9f22;	
-	font-size: 1.8em;
+    color: #ff9f22;
+    font-size: 1.8em;
 }
 
-h3 {
-	color: #3e3e3e;
+h3, h2#toc {
+    color: #252525;
+    font-size: 1.2em;
+    margin-bottom: 1em;
 }
-main, #title {
-	box-sizing: border-box;
+
+main, #title, #logo {
+    box-sizing: border-box;
     float: left;
     width: 100%;
-    font-family: Titillium web;
-	padding-left: 256px;
-	padding-top: 1em;
-	background-color:#4e4e4e;
+    padding-left: 256px;
+    padding-top: 1em;
 }
 
-
 #nav {
-    font-family: Titillium web;
     background: #4e4e4e none repeat scroll 0 0;
     float: left;
     height: 100%;
@@ -59,11 +54,10 @@ main, #title {
     position: fixed;
     top: 128px;
     width: 256px;
+    padding-left: 1.5em;
 }
 
-
 #footer {
-    font-family: Titillium web;
     background: #4e4e4e none repeat scroll 0 0;
     bottom: 0;
     clear: left;
@@ -83,8 +77,8 @@ main, #title {
     padding-bottom: 100px; /* same as footer height */
     scroll-behavior: auto; /* just in case */
     max-width: 100%; /*not sure about it.. but very useful*/
-	width:1000px;
-	margin-left: auto;
+    width:1000px;
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -96,30 +90,25 @@ main, #title {
 p {
     color: #f0f0f0;
 }
+
 a {
     color: #deaa71;
     text-decoration: none;
-	padding-left: 0.1em;
+    padding-left: 0.1em;
     padding-right: 0.1em;
 
 }
-
-
 
 a:hover {
     background-color: #deaa71;
     color: #4e4e4e;
 }
 
-
-
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
-
 
 nav ul a:hover {
     background-color: #ff9f1c;
@@ -130,28 +119,20 @@ nav ul a {
     color: #ff9f22;
     text-decoration: none;
 }
+
 /* xtrainfo is for external information,.. mainly links to another pages, could be videos, articles, wiki.. etc*/
 .xtrainfo {
     background-color: #575a5a;
     border-color: #666666 #111111 #111111 #666666;
-	border-style: solid;
-	border-width: 1px;
+    border-style: solid;
+    border-width: 1px;
     border-radius: 4px;
     margin-top: 1em;
     padding: 0.5em 2em 0.5em;
     text-align: left;
-	color:#dddddd;
-}
-.xtrainfo a {
-	color: #deaa71;
-    margin-left: 0.1em;
-    margin-right: 0.1em;
-    text-decoration: none;
+    color:#dddddd;
 }
 
-.xtrainfo a {
-	color:#ffffff;
-}
 /*---------------------------------------------------------TABLES*/
 .table1 {
     background-color: #a0a0a0;
@@ -159,7 +140,7 @@ nav ul a {
     text-align: right;
     padding: 1em;
     color: #a0a0a0;
-    
+
 }
 .table1 th, tr, td {
     padding: 1em;
@@ -186,7 +167,7 @@ nav ul a {
 /* that is the most generic style*/
 .cont-center {
     text-align: center;
-}	
+}
 .cont-left {
     float:left;
     margin-right: 16px;
@@ -208,10 +189,9 @@ nav ul a {
     padding-right: 16em;
 }
 .cont-special img {
-	margin-top: 1em;
+    margin-top: 1em;
 
 }
-
 
 /* cont-center-solid means that is a non fluid content, I create the class just to be consistent.. and also just in case could be needed*/
 .cont-center-solid {
@@ -227,10 +207,10 @@ nav ul a {
 /* this is meant for something like a table mainly for lists of item= description, made for chests basically*/
 .item-combo {
     background-color: #484848;
-	border-color: #666666 #111111 #111111 #666666;
-	border-radius: 4px;
-	border-style: solid;
-	border-width: 1px;
+    border-color: #666666 #111111 #111111 #666666;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
     border-radius: 4px;
     margin-bottom: 1em;
     padding-bottom: 0.5em;
@@ -254,7 +234,7 @@ nav ul a {
     width: 128px;
 }
 .icon-text {
-}		
+}
 /*CAPTION COMBO image + caption in an individual wrap*/
 
 .caption-combo {
@@ -274,7 +254,7 @@ nav ul a {
 }
 .caption-combo-right {
     margin-left: 1em;
-    
+
 }
 
 .caption-img {
@@ -283,7 +263,7 @@ nav ul a {
 
 .caption-text {
     font-size: 0.95em;
-    
+
 }
 
 .caption-wrap {
@@ -294,33 +274,38 @@ nav ul a {
 }
 /* This is super crap, for centering 2 columns in additional information, setups and build. Don't do it at home please*/
 .center1-trick {
-    margin-left: 11%;			
+    margin-left: 11%;
 }
 .center2-trick {
-    margin-left: 7%;			
+    margin-left: 7%;
 }
 
 
-.band {
+#band {
     position: absolute;
 }
 
 
-.logo {
-    left: 43%;
+#logo {
     position: absolute;
-    top: 1em;
+    left: 0;
+    top: 0.5em;
+}
+
+#logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.1em;
 }
 
 
-.logo-text {
+#logo-text {
     color: #ffcc3f;
     font-size: 2em;
     text-align: center;
     text-transform: uppercase;
-	padding-top: 0.1em;
-	text-shadow: 0 -2px 0 rgb(36, 44, 48);
-	text-shadow:0 -2px 0 rgb(36, 44, 48), 1px 0px 1px rgb(88, 36, 0);
-	
-    
+    padding-top: 0.1em;
+    text-shadow: 0 -2px 0 rgb(36, 44, 48);
+    text-shadow:0 -2px 0 rgb(36, 44, 48), 1px 0px 1px rgb(88, 36, 0);
 }

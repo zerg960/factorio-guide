@@ -1,73 +1,54 @@
 <!DOCTYPE html>
 <!-- Template by html.am -->
 <html>
-	<head>
-         <link rel="stylesheet" type="text/css" href="css/guide-styles.css">
-         <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,400italic,600,600italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>{{ page.title | strip_html }}</title>
-	
-	</head>
-	
-	<body>		
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/guide-styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,400italic,600,600italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>{{ page.title | strip_html }}</title>
+    </head>
 
-		<header id="header">
-        	<div class="band"><img src="img/gfx/version-band.png" width="115" height="115"></div>
-            <div class="logo"><img src="img/gfx/factorio-logo.png" width="454" height="69">
-            <div class="logo-text"><strong>Players strategy guide</strong></div>
+    <body>
+
+        <header id="header">
+            <div id="band"><img src="img/gfx/version-band.png" width="115" height="115"></div>
+            <div id="logo">
+                <img src="img/gfx/factorio-logo.png" width="454" height="69">
+                <div id="logo-text"><strong>Players strategy guide</strong></div>
             </div>
-			<div class="innertube">
-                	<div id="title">
-                   	  <h1>{{ page.title }}</h1>
-					</div>
-          </div>	
-	</header>
-		
-		<div id="wrapper">
-		
-			<main>
-            	<div id="content">
-					<div class="innertube">
-						{{ content }}
-					</div>
-				</div>
-			</main>
-			
-			<nav id="nav">
-				<div class="innertube">
-					<h3>Table of Contents</h3>
-					<ul>
-                        <li><a href="01-introduction.html">Introduction</a></li>
-						<li><a href="02-about-the-game.html">About the game</a></li>
-						<li><a href="03-how-to-use-this-guide.html">How to use this guide</a></li>
-						<li><a href="04-game-options-and-map-settings.html">Game options and map settings</a></li>
-						<li><a href="05-initial-observations.html">Initial-observations</a></li>
-						<li><a href="06-collecting-resources.html">Collecting resources</a></li>
-						<li><a href="07-belt-and-inserter-mechanics.html">Belt and inserter mechanics</a></li>
-						<li><a href="08-establishing-power.html">Establishing-power</a></li>
-						<li><a href="09-automation.html">Automation</a></li>
-						<li><a href="10-science.html">Science</a></li>
-						<li><a href="11-pollution.html">Pollution</a></li>
-						<li><a href="12-trains.html">Trains</a></li>
-						<li><a href="13-liquids-and-oil-processing.html">Liquids and oil processing</a></li>
-						<li><a href="14-the-logistics-system.html">The logistics system</a></li>
-						<li><a href="15-modules.html">Modules</a></li>
-                        <li><a href="16-circuit-network.html">Circuit network</a></li>
-                        <li><a href="17-enemies-and-combat.html">Enemies and combat</a></li>
-                        <li><a href="18-additional-information-setups-and-builds.html">Additional information setups and builds</a></li>
-                        <li><a href="19-mods.html">Mods</a></li>
-                        <li><a href="20-item-index.html">Item-index</a></li>
-					</ul>
-				</div>
-			</nav>
-		
-		</div>
-		
-		<footer id="footer">
-			<div class="innertube">
-				<p></p>
-			</div>
-		</footer>
-	
-	</body>
+            <div id="title"><h1>{{ page.title }}</h1></div>
+        </header>
+
+        <main>
+            <div id="content">
+                    {{ content }}
+            </div>
+        </main>
+
+        <nav id="nav">
+            <h2 id="toc">Table of Contents</h2>
+            <ul>
+                <li><a href="01-introduction.html">Introduction</a></li>
+                <li><a href="02-about-the-game.html">About the game</a></li>
+                <li><a href="03-how-to-use-this-guide.html">How to use this guide</a></li>
+                <li><a href="04-game-options-and-map-settings.html">Game options and map settings</a></li>
+                <li><a href="05-initial-observations.html">Initial-observations</a></li>
+                <li><a href="06-collecting-resources.html">Collecting resources</a></li>
+                <li><a href="07-belt-and-inserter-mechanics.html">Belt and inserter mechanics</a></li>
+                <li><a href="08-establishing-power.html">Establishing-power</a></li>
+                <li><a href="09-automation.html">Automation</a></li>
+                <li><a href="10-science.html">Science</a></li>
+                <li><a href="11-pollution.html">Pollution</a></li>
+                <li><a href="12-trains.html">Trains</a></li>
+                <li><a href="13-liquids-and-oil-processing.html">Liquids and oil processing</a></li>
+                <li><a href="14-the-logistics-system.html">The logistics system</a></li>
+                <li><a href="15-modules.html">Modules</a></li>
+                <li><a href="16-circuit-network.html">Circuit network</a></li>
+                <li><a href="17-enemies-and-combat.html">Enemies and combat</a></li>
+                <li><a href="18-additional-information-setups-and-builds.html">Additional information setups and builds</a></li>
+                <li><a href="19-mods.html">Mods</a></li>
+                <li><a href="20-item-index.html">Item index</a></li>
+            </ul>
+        </nav>
+    </body>
 </html>
