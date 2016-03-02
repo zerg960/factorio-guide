@@ -48,13 +48,13 @@ main, #title, #logo {
 
 #nav {
     background: #4e4e4e none repeat scroll 0 0;
-    float: left;
-    height: 100%;
-    left: 0;
     position: fixed;
+    left: 0;
     top: 128px;
+    bottom: 0;
     width: 256px;
     padding-left: 24px;
+    overflow: auto;
 }
 
 #footer {
