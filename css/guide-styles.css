@@ -76,7 +76,7 @@ main, #title, #logo {
     margin-top: 128px;/* same as header height */
     padding-bottom: 100px; /* same as footer height */
     scroll-behavior: auto; /* just in case */
-    max-width: 100%; /*not sure about it.. but very useful*/
+    max-width: 95%;
     width:1000px;
     margin-left: auto;
     margin-right: auto;
