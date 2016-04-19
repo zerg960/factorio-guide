@@ -14,6 +14,7 @@ body {
 #header {
     background: #4e4e4e none repeat scroll 0 0;
     height: 178px;
+    box-shadow: 85px 46px 48px #4e4e4e;
     left: 0;
     position: fixed;
     top: 0;
@@ -73,7 +74,7 @@ main, #title, #logo {
 }
 
 #content {
-    margin-top: 128px;/* same as header height */
+    margin-top: 152px;/* same as header height */
     padding-bottom: 100px; /* same as footer height */
     scroll-behavior: auto; /* just in case */
     max-width: 95%;
@@ -104,21 +105,27 @@ a:hover {
     color: #4e4e4e;
 }
 
+
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
-nav ul a:hover {
-    background-color: #ff9f1c;
-    color: #4e4e4e;
-}
-
 nav ul a {
     color: #ff9f22;
     text-decoration: none;
 }
+nav ul a:hover {
+    background-color: #ff9f1c;
+    color: #4e4e4e;
+}
+nav ul a:active {
+    background-color: #ff9f1c;
+    color: #4e4e4e;
+}
+
+
 
 /* xtrainfo is for external information,.. mainly links to another pages, could be videos, articles, wiki.. etc*/
 .xtrainfo {
@@ -131,6 +138,18 @@ nav ul a {
     padding: 0.5em 2em 0.5em;
     text-align: left;
     color:#dddddd;
+}
+
+.darkinfo {
+    background-color: #484848;
+    border-color: #666666 #111111 #111111 #666666;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1px;
+    padding-top: 2em;
+    padding: 0.5em 2em 0.5em;
+    text-align: left;
+    color:#111111;
 }
 
 /*---------------------------------------------------------TABLES*/
@@ -212,7 +231,7 @@ nav ul a {
     border-style: solid;
     border-width: 1px;
     border-radius: 4px;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     padding-bottom: 0.5em;
 }
 
@@ -222,10 +241,23 @@ nav ul a {
     text-align: center;
     width: 128px;
 }
+
+.item-img-short {
+    float: left;
+    margin-top: 56px;
+    text-align: center;
+    width: 128px;
+}
 .item-text {
     margin-left: 128px;
     padding: 0.5em 2em 0.5em 0.5em;
 }
+
+.item-text-short {
+    margin-left: 56px;
+    padding: 0.25em 0.8em 0.25em 0.25em;
+}
+
 /*icon-img is the same as item-img- but optimized for icons(x 32px)*/
 .icon-img {
     float: left;
@@ -233,6 +265,15 @@ nav ul a {
     text-align: center;
     width: 128px;
 }
+
+.icon-img-short {
+    float: left;
+    margin-top: 12px;
+    text-align: center;
+    width: 56px;
+    padding-top: 0.5em;
+}
+
 .icon-text {
 }
 /*CAPTION COMBO image + caption in an individual wrap*/
@@ -251,6 +292,14 @@ nav ul a {
 }
 .col-wrapper {
     display: flex;
+}
+.col-wrapper-left {
+    float:left;
+    margin-right: 16px;
+}
+.col-wrapper-right {
+    float:right;
+    margin-right: 16px;
 }
 .caption-combo-right {
     margin-left: 1em;
@@ -271,7 +320,55 @@ nav ul a {
     border-radius: 4px;
     display: inline-block;
     padding: 8px;
+
 }
+.caption-wrap-pop {
+    background-color: #4a4a4a;
+    border-color: #666666 #111111 #111111 #666666;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 4px;
+
+}
+
+.caption-wrap-pop-400 {
+    background-color: #4a4a4a;
+    border-color: #666666 #111111 #111111 #666666;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 4px;
+    height: 400px;
+
+}
+
+.caption-wrap-left {
+    background-color: #4a4a4a;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 8px;
+    width: 317px;
+}  
+.caption-wrap-right {
+    background-color: #4a4a4a;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 8px;
+    width: 317px;
+}  
+.caption-wrap-centre {
+    background-color: #4a4a4a;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 8px;
+    width: 301px;
+}  
+  
+  
+  
 /* This is super crap, for centering 2 columns in additional information, setups and build. Don't do it at home please*/
 .center1-trick {
     margin-left: 11%;
