@@ -81,6 +81,7 @@ main, #title, #logo {
     width:1000px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom:32px;
 }
 
 .innertube {
@@ -141,7 +142,7 @@ nav ul a:active {
 }
 
 .darkinfo {
-    background-color: #484848;
+    background-color: #37363b;
     border-color: #666666 #111111 #111111 #666666;
     border-style: solid;
     border-width: 1px;
@@ -347,6 +348,16 @@ nav ul a:active {
 
 .caption-wrap-left {
     background-color: #4a4a4a;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 8px;
+    width: 317px;
+}  
+.caption-wrap-left-pop {
+    background-color: #4a4a4a;
+    border-color: #666666 #111111 #111111 #666666;
+    border-style: solid;
+    border-width: 1px;
     border-radius: 4px;
     display: inline-block;
     padding: 8px;
