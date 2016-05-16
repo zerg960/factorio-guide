@@ -106,7 +106,9 @@ a:hover {
     color: #4e4e4e;
 }
 
-
+ul {
+    color: #f0f0f0;
+}
 
 nav ul {
     list-style-type: none;
@@ -334,6 +336,17 @@ nav ul a:active {
 
 }
 
+.image-wrap {
+    background-color: #38373c;
+    border-color: #666666 #111111 #111111 #666666;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    display: inline-flex;
+    padding: 4px;
+      
+
+}
 .caption-wrap-pop-400 {
     background-color: #4a4a4a;
     border-color: #666666 #111111 #111111 #666666;
@@ -370,6 +383,16 @@ nav ul a:active {
     padding: 8px;
     width: 317px;
 }  
+.caption-wrap-right-pop {
+    background-color: #4a4a4a;
+    border-color: #666666 #111111 #111111 #666666;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 8px;
+    width: 317px;
+} 
 .caption-wrap-centre {
     background-color: #4a4a4a;
     border-radius: 4px;
@@ -377,6 +400,16 @@ nav ul a:active {
     padding: 8px;
     width: 301px;
 }  
+.caption-wrap-centre-pop {
+    background-color: #4a4a4a;
+    border-color: #666666 #111111 #111111 #666666;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 8px;
+    width: 301px;
+} 
   
   
   

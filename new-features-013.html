@@ -1,0 +1,121 @@
+---
+layout: default
+title: New features in 0.13
+---
+
+<h2>Mod portal</h2>
+<p>Brief description of the mod portal<br>
+For more information click <a href="../guide/mod-portal.html">here</a></p>
+<h2>Multiplayer Matching Server</h2>
+<p>In 0.13 we have the new multiplayer matching server and server browser. This will let you find games of people online join your friends and other stuff</p>
+
+
+<h2>Achievements</h2>
+<p>In 0.13 there is now a new achievement system.<br> Achievements fall into some basic categories:</p>
+<ul>
+<li>This
+<li>That
+<li>Other
+<li>More
+</ul>
+</p>
+<div class="image-wrap">
+<img src="img/new-features-013/achievements.jpg">
+</div>
+
+<h2>Better Rail Building</h2>
+
+
+<h2>Power Switch</h2>
+
+
+<h2>Train Conditions</h2>
+
+<div class="image-wrap"><p><Strong>In-activity needs to be fixed to Inactivity</strong></p><br><img src="img/new-features-013/train-conditions.png"></div>
+
+
+<h2>Train GUI</h2>
+<div class="image-wrap"><p><strong>PLACEHOLDER PLZ FIX WITH NEW WAGONS AND BETTER BITRATE</strong></p><video  autoplay loop><source src="img/new-features-013/loco-gui-1.webm" type="video/webm"></video></div>
+
+
+
+<h2>Train station window</h2>
+<p>New train window will show what trains are scheduled to each stop</p>
+<div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/train-stop-gui-3.webm" type="video/webm"></video></div>
+
+
+
+
+<h2>Single train Gui</h2>
+
+
+
+<h2>Blueprint book</h2>
+
+
+
+<h2>Modules in blueprints</h2>
+
+<h2>Search in crafting menu</h2>
+<p>There is a new search feature in the crafting menu, which will search through all the recipes, even any mods, and will show only those which fit the search term.
+You can access the search by click on the magnifyer icon or by pressing CONTROL + F.
+</p>
+
+<div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/crafting-search.webm" type="video/webm"></video></div>
+
+
+
+
+<h2>Ease of use improvements</h2>
+<ul>  <li>Rail signal placement indicator.
+    <li>Indicator of train vehicle positions in a station when building next to track where would the train stop.<br><div class="image-wrap"><img src="img/new-features-013/wagon-position-indicator.png"></div>
+    <li>It is possible to change the module in the slot to different one without having to clear it first.
+    <div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/module-fast-replace.webm" type="video/webm"></video></div>
+    <li>It is possible to upgrade modules to more powerful variant in machine by fast entity transfer.
+    <li>Clear cursor first cancels the current action (rail building, wire dragging), and only removes the item from the cursor when pressed again.
+    <li>Improved car handling: The car's rate of turn changes smoothly and steering is less sensitive at high speeds, making driving in a straight line easier.
+    <li>Saving a game changes selected name and directory for next saves (https://forums.factorio.com/19461)
+    <li>Clicking different filtered slot in quickbar will try to clear the currently selected quickbar item if possible.
+    <li>Cleaning item in cursor that is taken from quickbar slot will try to refill the slot from the inventory if possible.
+    <li>Clicking on the warning icon will open the location on the map.
+    <li>Pressing E/Escape will close the map mode.
+    <li>It is possible to move the map by dragging.
+    <li>Fixed the zoom to cursor feature introduced in 0.8 that was non functional since 0.10.
+    <li>Improved the rail selection logic in junctions.
+    <li>Reduced number of connections drawn between roboports in blueprint and roboports on map.
+    
+    </ul>
+    
+
+    
+    <h2>Small features</h2>
+ <ul>     <li>Small sidebar gui containing buttons for main menu, production statistics, etc.<br><div class="image-wrap"><p>KILL ME</p><img src="img/new-features-013/sidebar.png"></div>
+    <li>Bonus gui (accessible from sidebar gui) showing bonuses player has achieved.<div class="image-wrap"><img src="img/new-features-013/bonuses.png"></div>
+    <li>Underground pipes and belts are placed at max connecting distance apart when built by dragging. 
+    <li>Combinators show some information in alt mode, including input and output arrows.<div class="image-wrap"><p>KILL ME</p><img src="img/new-features-013/combinator-signals.png"></div>
+    <li>More virtual signals.<br><div class="image-wrap"><p>KILL ME</p><img src="img/new-features-013/virtual-signals.png"></div>
+    <li>--scenario2map: Creates a save from a custom scenario, without initialising the graphics.
+    <li>The constant combinator has an on/off switch.<br><div class="image-wrap"><img src="img/new-features-013/constant-combinator-switch.png"></div>
+    <li>The lamp can change it's color based on circuit network signals.
+    <li>Roboport is connectable to the circuit network. It sends the logistic network contents.
+    <li>Requester chest's requested items can be set automatically from the circuit network.
+    <li>Wire disconnecting is incorporated in the latency hiding.
+    <li>Intro sound in the loading screen.
+    <li>Added yellow/black striped concrete tile that is rotatable.
+    <li>Added landfill, it can be used to replace water areas by grass.
+    <li>Added /ban /kick /bans /admins and /admin commands.
+    <li>Added /color command, so changing color doesn't require access to lua commands.<br>
+    Current colors are Blue, Red, Black, Gray, White, Pink, Orange, Yellow, Brown, Green and Purple
+    <li>When running as a server, Factorio now accepts console commands on standard input
+    <li>When running as a server, Factorio can be told to listen for RCON connections. To use this, specify both the --rcon-port and --rcon-password parameters on the command line. The network protocol is specified here: https://developer.valvesoftware.com/wiki/Source_RCON_Protocol
+    <li>New parameter to start the headless server: --start-server-load-latest. Instead of accepting a save name, it will automatically load the latest save in the saves folder.</ul>
+    
+    
+ <h2>Balancing</h2>
+<ul>    <li>The productivity module pollution addition was lowered (30%->5%, 40%->7.5%, 50%->10%), as the pollution generated by the machine is already increased by the additional energy production and time, it doesn't need to be so high as the modules are quite expensive already.
+    <li>Repair packs have double durability (100->200) and stack size (50->100).
+    <li>Changed stack size of wood (50->100) so it doesn't fill the inventory so quickly.
+    <li>Roboport have decreased transmition power consumption (200kw->50kw) while the robots (and their recharting) has increased power consumption (200kW per recharge slot to 1Mw per slot). Basically, covering area by roboports is cheaper, but using robots for transport is more expensive. To keep the personal roboport usefulness, energies used in personal roboport have been
+      all multiplied by 10.
+    <li>Increased size of several green science and few blue science technologies.</ul>
+    
