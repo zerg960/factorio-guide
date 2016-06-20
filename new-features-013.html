@@ -2,14 +2,54 @@
 layout: default
 title: New features in 0.13
 ---
+<h2>Multiplayer Matching Server connectivity.</h2>
+<p> In 0.13 we have the new multiplayer matching server and server browser. This will let you find games of people online join your friends and other stuff. Server games are published to the server and clients can browse existing games.</p>
+
+<p>
+The first thing you will notice is the new multiplayer menu. When you click on 'Browse Public games' you will be asked to log in to your factorio account.
+
+</p>
+<div class="image-wrap">
+<img src="img/new-features-013/multiplayer-menu.jpg">
+</div>
+<div class="image-wrap">
+<img src="img/new-features-013/login-screen.png">
+</div>
+<p>From here you can browse any games that are public on the matching server, you can select a filter, search for specific names, and see game details about the servers. You can sort the search by name, players or playtime.</p>
+
+<div class="image-wrap">
+<img src="img/new-features-013/browse-games-gui.jpg">
+</div>
+
+<p>
+To host a game on the matching server, click the 'New game' or 'Load game' button in the multiplayer menu, and you after selecting a map, you will have multiple options for hosting your game.
+</p>
+<div class="image-wrap">
+<img src="img/new-features-013/hosting-gui.jpg">
+</div>
+<p>
+By checking the 'Verify User Identity' box, you will require any player who connects to your game to be logged into a factorio account.
+</p>
+<p>
+You can also play games over LAN using the same interface, but you won't be required to log in to use it. 
+</p>
+
+<h2>Server Admin commands</h2>
+
+<p>
+The server now has the ability to use specific multiplayer commands, while having the enable commands checkbox unselected. The first player who hosts the game will be the admin, and there are many commands which they can run. The admin can kick, ban/unban, and promote other players to admin. Regular players can also use specific multiplayer commands now, such as setting color, reading evolution factor, viewing player list and more. Type /help in game to find out a list of all the commands.
+</p>
+<p>
+When running a server, you can set the server to listen for RCON connections. To use this, specify both the --rcon-port and --rcon-password parameters on the command line. The network protocol is specified here: https://developer.valvesoftware.com/wiki/Source_RCON_Protocol.
+</p>
+<p>
+One last change is the server can now be started with the parameter --start-server-load-latest, which will automatically load the latest save game in the saves folder.
+</p>
+
 
 <h2>Mod portal</h2>
-<p>Brief description of the mod portal<br>
-For more information click <a href="../guide/mod-portal.html">here</a></p>
-<h2>Multiplayer Matching Server</h2>
-<p>In 0.13 we have the new multiplayer matching server and server browser. This will let you find games of people online join your friends and other stuff</p>
-
-
+<p>Brief description of the mod portal</p>
+    
 <h2>Achievements</h2>
 <p>In 0.13 there is now a new achievement system.<br> Achievements fall into some basic categories:</p>
 <ul>
@@ -19,103 +59,108 @@ For more information click <a href="../guide/mod-portal.html">here</a></p>
 <li>More
 </ul>
 </p>
-<div class="image-wrap">
+<div class="image-wrap">Placeholder
 <img src="img/new-features-013/achievements.jpg">
 </div>
 
 <h2>Better Rail Building</h2>
-
-
-<h2>Power Switch</h2>
-
+<p>The old system of building rails has been completely redone, and now all rails are placed using the rail planner. Once you place a piece of rail, you can then click over it, and begin using the rail planner.</p>
+<br>
+<p>The rail planner will try to find a path from the initial rail, and the position of your mouse cursor.
+ By clicking normaly, you will be in manual rail placing mode, where you can only find paths up to 10 rails long.
+ By holding shift and clicking on the rail, you enter the ghost place mode. When in this mode you can search for paths of any length, between the initial rail and the mouse cursor.
+ By holding shift while searching of a path in ghost-place mode,it will ignore any trees and rocks that are in the way. </p>
+ 
+ <p>Gif here?</p>
 
 <h2>Train Conditions</h2>
 
-<div class="image-wrap"><p><Strong>In-activity needs to be fixed to Inactivity</strong></p><br><img src="img/new-features-013/train-conditions.png"></div>
+<div class="image-wrap"><p><Strong>get new pic</strong></p><br><img src="img/new-features-013/train-conditions.png"></div>
 
 
 <h2>Train GUI</h2>
-<div class="image-wrap"><p><strong>PLACEHOLDER PLZ FIX WITH NEW WAGONS AND BETTER BITRATE</strong></p><video  autoplay loop><source src="img/new-features-013/loco-gui-1.webm" type="video/webm"></video></div>
+<p>It displays all the trains as small minimaps with schedules. Schedules can be searched.</p>
+<div class="image-wrap"><p><strong>to be fixed</strong></p><video  autoplay loop><source src="img/new-features-013/loco-gui-1.webm" type="video/webm"></video></div>
 
 
 
 <h2>Train station window</h2>
-<p>New train window will show what trains are scheduled to each stop</p>
+<p>Train station window contains a list of all trains (each can be opened) that have that station on their schedule. New train window will show what trains are scheduled to each stop</p>
 <div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/train-stop-gui-3.webm" type="video/webm"></video></div>
 
 
 
 
 <h2>Single train Gui</h2>
+<p>Single train gui now has an additional panel which shows the minimap / camera view with the given train.</p>
+
+<h2>Train and rail placement idicators</h2>
+<p>- Rail signal placement indicator. (https://www.factorio.com/blog/post/fff-134)
+    - Indicator of train vehicle positions in a station when building next to track where would the train stop.</p>
+
+<h2> Blueprint improvements</h2>
+<p>Instead of 3 titles, these three are in a single heading: Blueprint book, Blueprints can be edited and Modules in blueprints</p>
 
 
-
-<h2>Blueprint book</h2>
-
-
-
-<h2>Modules in blueprints</h2>
-
-<h2>Search in crafting menu</h2>
-<p>There is a new search feature in the crafting menu, which will search through all the recipes, even any mods, and will show only those which fit the search term.
+<h2>Search in gui</h2>
+<p>There is a new search feature in the crafting menu and train gui, which will search through all the recipes, even any mods, and will show only those which fit the search term. Search field to the filter selection and recipes selection windows.
 You can access the search by click on the magnifyer icon or by pressing CONTROL + F.
 </p>
 
 <div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/crafting-search.webm" type="video/webm"></video></div>
 
+<h2>Added fire system</h2>
+<p>Includes flamethrower turret and flamethrower gun update</p>
+
+<h2>Small sidebar gui containing buttons for main menu, production statistics, etc.</h2>
+
+<h2>Circuit network improvements</h2>
+
+<ul>
+   <li> Power switch, can be used to control the energy flow. Power switch can be connected to the circuit network.
+   <li> Roboport is connectable to the circuit network. It sends the logistic network contents or the robot statistics of the network.
+   <li> Accumulator is connectable to the circuit network. It sends it's charge level as a percentage.
+   <li> Transport Belt is connectable to the circuit network. It can be turned on or off and it can send it's contents to the circuit network.
+   <li> Rail Signal is connectable to the circuit network.  It will send the signal's state and can block trains from passing.
+   <li> Gate can be controlled through the circuit network by connecting to the wall next to it. It can be opened manually or send a signal if the player is nearby.
+   <li> Requester chest's requested items can be set automatically from the circuit network.
+   <li> Inserters can now send the item held in hand to the circuit network. Smart inserter can have it's filters set automatically from the circuit network.
+   <li> Most entities that can be turned on or off by the circuit network can also be turned on or off by directly using a logistic condition.
+   <li> Connected Red/Green wires are highlighted when hovering over a combinator or entity connected to the circuit network.
+   <li> Combinators input and output arrows in alt mode. Additional alt mode information can be turned on in the options menu.
+   <li> More virtual signals.
+   <li> The constant combinator has an on/off switch.
+   <li> New combinator graphics.
+   <li> Constant combinator can be rotated.
+   <li> All types of inserters can be controlled by the circuit and logistic network, once the respective network is researched.
+   <li> All types of chests can be connected to the circuit network. Smart Chest was removed from the game.
+   <li> Circuit network and logistic network conditions can now be accessed by icons in the top<li>right corner of the entity's GUI, for all entities.
+   <li> Decider combinator "input count" option makes the combinator copy the count of the specified output signal from the input signals,
+     instead of copying the count from the condition. This might break some setups. https://forums.factorio.com/13706
+   <li> Less memory usage for entities that are connectable to the circuit network.
+   <li> Added LuaCircuitNetwork readable off entities with circuit network connections and through control behaviours.
+ </ul>
+      
+      <h2>New Tiles</h2>
+      <p>    - Added yellow/black striped concrete tile that is rotatable.
+    - Added landfill, it can be used to replace water areas by grass.</p>
+    
+    <h2>Improvements to the Electric network and Production GUI</h2>
+    <p>Added the ability to filter out things.
+      Added the ability to view "all" information recorded.
+      Made the GUI scrollable.</p>
+      
+    <h2>Other Tweaks and Additions</h2>
+    <p>
+    Improved car handling: The car's rate of turn changes smoothly and steering is less sensitive at high speeds, making driving in a straight line easier.
+      
+      Turret displays its range when you hover over it.
+Armors have inventory size bonuses. (10 for modular armor, 20 for power armor, 30 for power armor mk2)
+
+Added cluster grenades and grenade upgrades.
+</p>
 
 
 
-<h2>Ease of use improvements</h2>
-<ul>  <li>Rail signal placement indicator.
-    <li>Indicator of train vehicle positions in a station when building next to track where would the train stop.<br><div class="image-wrap"><img src="img/new-features-013/wagon-position-indicator.png"></div>
-    <li>It is possible to change the module in the slot to different one without having to clear it first.
-    <div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/module-fast-replace.webm" type="video/webm"></video></div>
-    <li>It is possible to upgrade modules to more powerful variant in machine by fast entity transfer.
-    <li>Clear cursor first cancels the current action (rail building, wire dragging), and only removes the item from the cursor when pressed again.
-    <li>Improved car handling: The car's rate of turn changes smoothly and steering is less sensitive at high speeds, making driving in a straight line easier.
-    <li>Saving a game changes selected name and directory for next saves (https://forums.factorio.com/19461)
-    <li>Clicking different filtered slot in quickbar will try to clear the currently selected quickbar item if possible.
-    <li>Cleaning item in cursor that is taken from quickbar slot will try to refill the slot from the inventory if possible.
-    <li>Clicking on the warning icon will open the location on the map.
-    <li>Pressing E/Escape will close the map mode.
-    <li>It is possible to move the map by dragging.
-    <li>Fixed the zoom to cursor feature introduced in 0.8 that was non functional since 0.10.
-    <li>Improved the rail selection logic in junctions.
-    <li>Reduced number of connections drawn between roboports in blueprint and roboports on map.
-    
-    </ul>
-    
 
-    
-    <h2>Small features</h2>
- <ul>     <li>Small sidebar gui containing buttons for main menu, production statistics, etc.<br><div class="image-wrap"><p>KILL ME</p><img src="img/new-features-013/sidebar.png"></div>
-    <li>Bonus gui (accessible from sidebar gui) showing bonuses player has achieved.<div class="image-wrap"><img src="img/new-features-013/bonuses.png"></div>
-    <li>Underground pipes and belts are placed at max connecting distance apart when built by dragging. 
-    <li>Combinators show some information in alt mode, including input and output arrows.<div class="image-wrap"><p>KILL ME</p><img src="img/new-features-013/combinator-signals.png"></div>
-    <li>More virtual signals.<br><div class="image-wrap"><p>KILL ME</p><img src="img/new-features-013/virtual-signals.png"></div>
-    <li>--scenario2map: Creates a save from a custom scenario, without initialising the graphics.
-    <li>The constant combinator has an on/off switch.<br><div class="image-wrap"><img src="img/new-features-013/constant-combinator-switch.png"></div>
-    <li>The lamp can change it's color based on circuit network signals.
-    <li>Roboport is connectable to the circuit network. It sends the logistic network contents.
-    <li>Requester chest's requested items can be set automatically from the circuit network.
-    <li>Wire disconnecting is incorporated in the latency hiding.
-    <li>Intro sound in the loading screen.
-    <li>Added yellow/black striped concrete tile that is rotatable.
-    <li>Added landfill, it can be used to replace water areas by grass.
-    <li>Added /ban /kick /bans /admins and /admin commands.
-    <li>Added /color command, so changing color doesn't require access to lua commands.<br>
-    Current colors are Blue, Red, Black, Gray, White, Pink, Orange, Yellow, Brown, Green and Purple
-    <li>When running as a server, Factorio now accepts console commands on standard input
-    <li>When running as a server, Factorio can be told to listen for RCON connections. To use this, specify both the --rcon-port and --rcon-password parameters on the command line. The network protocol is specified here: https://developer.valvesoftware.com/wiki/Source_RCON_Protocol
-    <li>New parameter to start the headless server: --start-server-load-latest. Instead of accepting a save name, it will automatically load the latest save in the saves folder.</ul>
-    
-    
- <h2>Balancing</h2>
-<ul>    <li>The productivity module pollution addition was lowered (30%->5%, 40%->7.5%, 50%->10%), as the pollution generated by the machine is already increased by the additional energy production and time, it doesn't need to be so high as the modules are quite expensive already.
-    <li>Repair packs have double durability (100->200) and stack size (50->100).
-    <li>Changed stack size of wood (50->100) so it doesn't fill the inventory so quickly.
-    <li>Roboport have decreased transmition power consumption (200kw->50kw) while the robots (and their recharting) has increased power consumption (200kW per recharge slot to 1Mw per slot). Basically, covering area by roboports is cheaper, but using robots for transport is more expensive. To keep the personal roboport usefulness, energies used in personal roboport have been
-      all multiplied by 10.
-    <li>Increased size of several green science and few blue science technologies.</ul>
-    
+
