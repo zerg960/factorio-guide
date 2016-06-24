@@ -1,6 +1,6 @@
 ---
-layout: default
-title: New features in 0.13
+layout: new-feature-page
+
 ---
 <h2>Multiplayer Matching Server connectivity.</h2>
 <p> In 0.13 we have the new multiplayer matching server and server browser. This will let you find games of people online join your friends and other stuff. Server games are published to the server and clients can browse existing games.</p>
@@ -40,7 +40,7 @@ You can also play games over LAN using the same interface, but you won't be requ
 The server now has the ability to use specific multiplayer commands, while having the enable commands checkbox unselected. The first player who hosts the game will be the admin, and there are many commands which they can run. The admin can kick, ban/unban, and promote other players to admin. Regular players can also use specific multiplayer commands now, such as setting color, reading evolution factor, viewing player list and more. Type /help in game to find out a list of all the commands.
 </p>
 <p>
-When running a server, you can set the server to listen for RCON connections. To use this, specify both the --rcon-port and --rcon-password parameters on the command line. The network protocol is specified here: https://developer.valvesoftware.com/wiki/Source_RCON_Protocol.
+When running a server, you can set the server to listen for RCON connections. To use this, specify both the --rcon-port and --rcon-password parameters on the command line. The network protocol is specified <a href="https://developer.valvesoftware.com/wiki/Source_RCON_Protocol">here</a>.
 </p>
 <p>
 One last change is the server can now be started with the parameter --start-server-load-latest, which will automatically load the latest save game in the saves folder.
@@ -48,72 +48,98 @@ One last change is the server can now be started with the parameter --start-serv
 
 
 <h2>Mod portal</h2>
-<p>Brief description of the mod portal</p>
-    
+<p>The mod portal is the in-game and online way to download and install mods. You can browse mods, search for specific mods, view details and download them all from in game. This is still highly experimental and feature incomplete, but development of the in-game and online portal will continue.</p>
+    <div class="image-wrap">
+<img src="img/new-features-013/mod-portal.jpg">
+</div>
+<p>You can check out the mod portal website <a href="http://www.mods.factorio.com">here</a>, where you can upload a mod, browse existing mods, rate and comment on mods. Uploading a mod requires you to pick one of the available licenses, or to specify your own.
+<br>
+ As with the multiplayer matching server, using the in game mod portal requires you to login with your Factorio website account, and to download mods from the website also requires a login.</p>
 <h2>Achievements</h2>
-<p>In 0.13 there is now a new achievement system.<br> Achievements fall into some basic categories:</p>
-<ul>
-<li>This
-<li>That
-<li>Other
-<li>More
-</ul>
-</p>
+<p>In 0.13 there is now a new achievement system.</p>
 <div class="image-wrap">Placeholder
 <img src="img/new-features-013/achievements.jpg">
 </div>
+<p> Achievements can be unlocked by fulfiling certain criteria in the game, such as producing 20k Iron plate in an hour, or finishing the game without the use of solar panels. We hope the achievements will allow players to explore new and different ways of building their fatories, by supplying a set of interesting yet optional limitations in the gameplay.<br>
+Achievements can only be reported to steam if the current game is not using any mods, and entering any console commands during a game will disable the unlocking of any achievements for that map.</p>
+
+</p>
+
 
 <h2>Better Rail Building</h2>
 <p>The old system of building rails has been completely redone, and now all rails are placed using the rail planner. Once you place a piece of rail, you can then click over it, and begin using the rail planner.</p>
-<br>
+<div class="image-wrap"><video  autoplay loop width=960px><source src="img/new-features-013/manual-rail-planner.webm" type="video/webm"></video></div>
 <p>The rail planner will try to find a path from the initial rail, and the position of your mouse cursor.
- By clicking normaly, you will be in manual rail placing mode, where you can only find paths up to 10 rails long.
- By holding shift and clicking on the rail, you enter the ghost place mode. When in this mode you can search for paths of any length, between the initial rail and the mouse cursor.
- By holding shift while searching of a path in ghost-place mode,it will ignore any trees and rocks that are in the way. </p>
+ By clicking on a rail piece, while holding a rail in your cursor, you will enter manual rail building mode, where you can only find paths up to 10 rails long.<br>
+ If you hold shift while you click on the rail, you enter the ghost rail planning mode. When in this mode you can search for paths of any length, between the initial rail and the mouse cursor, and when you click again it will lay ghosts in the path that was planned.</p>
+ <div class="image-wrap"><video  autoplay loop width=960px><source src="img/new-features-013/ghost-rail-planner.webm" type="video/webm"></video></div>
+ <p>By holding shift while searching of a path in ghost-place mode,it will ignore any trees that are in the way, and mark them for deconstruction if they are in the way of any planned rail. Pressing the rotate key while holding the ghost planner will find solutions for a rotated final rail.<br>
+ As you can see the rail planner can make extremely complex and unique rail designs possible, and allows for easy and intuitive building of your rail network.</p>
  
- <p>Gif here?</p>
+
 
 <h2>Train Conditions</h2>
-
-<div class="image-wrap"><p><Strong>get new pic</strong></p><br><img src="img/new-features-013/train-conditions.png"></div>
+<p>The new train conditions allow you to more precisely control when a train will leave a station. These simple, yet powerful conditions allow greater flexibility and efficiency of your rail system, while simplifying some of the frustrating and unintuitive aspects of previous train schedule management.</p>
+<div class="image-wrap"><br><img src="img/new-features-013/wait-condition.jpg"></div>
 
 
 <h2>Train GUI</h2>
-<p>It displays all the trains as small minimaps with schedules. Schedules can be searched.</p>
-<div class="image-wrap"><p><strong>to be fixed</strong></p><video  autoplay loop><source src="img/new-features-013/loco-gui-1.webm" type="video/webm"></video></div>
+<p>The train Gui shows an overview of all the trains you have in your factory, as small minimaps with the schedule underneath. By clicking on any minimap, you will be brought to that trains specific gui, where you can set its schedule and see its status more clearly. You can use the search feature to filter the train by scheduled stops, making management of really large networks more simple.</p>
 
+<div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/train-gui-2.webm" type="video/webm"></video></div>
 
 
 <h2>Train station window</h2>
 <p>Train station window contains a list of all trains (each can be opened) that have that station on their schedule. New train window will show what trains are scheduled to each stop</p>
-<div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/train-stop-gui-3.webm" type="video/webm"></video></div>
+<div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/train-stop-gui-new-2.webm" type="video/webm"></video></div>
 
 
 
 
 <h2>Single train Gui</h2>
-<p>Single train gui now has an additional panel which shows the minimap / camera view with the given train.</p>
+<p>Single train gui now has an additional panel which shows the minimap / camera view with the given train. From this gui you can set the trains schedule and wai condition, preview it in the side panel, and even change the color of the locomotive.</p>
 
+<div class="image-wrap">
+<img src="img/new-features-013/train-gui.jpg">
+</div>
 <h2>Train and rail placement idicators</h2>
 <p>- Rail signal placement indicator. (https://www.factorio.com/blog/post/fff-134)
-    - Indicator of train vehicle positions in a station when building next to track where would the train stop.</p>
+- Indicator of train vehicle positions in a station when building next to track where would the train stop.</p>
+<p>The Signal placement indicator is a small visual aid to more easily see where on your rails it makes sense to place signals. The available locations will show as green squares, and will respect the direction of your 1-way systems. This makes it easy to see if you have made any mistakes or miscalculations when building your rail junctions, and will make the system easier to become familiar with.
+<div class="image-wrap">
+<img src="img/new-features-013/signal-placement-indicator.jpg">
+</div>
 
 <h2> Blueprint improvements</h2>
+<p><strong>Blueprint book</strong> <br>
+The new blueprint book will allow you to store up to 60 blueprints in a single item, useful to store and manage your blueprints, without sacrificing a large amount of your inventory space.</p>
+<div class="image-wrap">
+<img src="img/new-features-013/blueprint-book.jpg">
+</div>
+
+<p>Blueprints can now be edited after they have been created,you can remove entites frm the blueprint, change the name and edit the icon. To remove an entity, simply right-click on it in the blueprint gui, and to un-remove it, left-click on its ghost. Blueprints can also toggle whether to include modules, entities and tiles.</p> 
+<div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/blueprint-edit-2.webm" type="video/webm"></video></div>
+<div class="image-wrap">
+<img src="img/new-features-013/blueprint-includes.jpg">
+</div>
 <p>Instead of 3 titles, these three are in a single heading: Blueprint book, Blueprints can be edited and Modules in blueprints</p>
 
 
 <h2>Search in gui</h2>
-<p>There is a new search feature in the crafting menu and train gui, which will search through all the recipes, even any mods, and will show only those which fit the search term. Search field to the filter selection and recipes selection windows.
-You can access the search by click on the magnifyer icon or by pressing CONTROL + F.
+<p>There is a new search feature in the crafting menu and train gui, which will search through all the recipes, even any mods, and will show only those which fit the search term. You can access the search by click on the magnifyer icon or by pressing CONTROL + F.
 </p>
 
 <div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/crafting-search.webm" type="video/webm"></video></div>
 
 <h2>Added fire system</h2>
-<p>Includes flamethrower turret and flamethrower gun update</p>
+<p>The new fire system in 0.13 allows for a level of automated environmental destruction previously impossible. Watch as entire forests ignite and burn with flames, as the local inhabitants succumb to the heat. The new fire damages all around it, and spreads itself among trees. This powerful new system is very effective for clearing out large areas of enemies.<br>
+The handheld flamthrower and flamethrower turret both shoot a stream of burning fluid toward the enemy, which combusts into a blazing wall when it hits the ground. Any enemies caught in it will catch on fire and take large amounts of damage, any trees near the fire will also start to burn. There is no way to stop the fire, except for cutting down any trees in its path. Burning trees can release huge amounts of pollution, so be careful not to overdo it, or you might be the one feeling the heat.</p>
+
 
 <h2>Small sidebar gui containing buttons for main menu, production statistics, etc.</h2>
-
+<div class="image-wrap">
+<img src="img/new-features-013/sidebar-gui.jpg">
+</div>
 <h2>Circuit network improvements</h2>
 
 <ul>
