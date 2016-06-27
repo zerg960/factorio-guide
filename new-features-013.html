@@ -57,10 +57,12 @@ One last change is the server can now be started with the parameter --start-serv
  As with the multiplayer matching server, using the in game mod portal requires you to login with your Factorio website account, and to download mods from the website also requires a login.</p>
 <h2>Achievements</h2>
 <p>In 0.13 there is now a new achievement system.</p>
-<div class="image-wrap">Placeholder
-<img src="img/new-features-013/achievements.jpg">
+
+<p> Achievements can be unlocked by fulfiling certain criteria in the game, such as producing 20k Iron plate in an hour, or finishing the game without the use of solar panels. We hope the achievements will allow players to explore new and different ways of building their fatories, by supplying a set of interesting yet optional limitations in the gameplay.</p>
+<div class="image-wrap">
+<img src="img/new-features-013/achievements-1.jpg">
 </div>
-<p> Achievements can be unlocked by fulfiling certain criteria in the game, such as producing 20k Iron plate in an hour, or finishing the game without the use of solar panels. We hope the achievements will allow players to explore new and different ways of building their fatories, by supplying a set of interesting yet optional limitations in the gameplay.<br>
+<p>
 Achievements can only be reported to steam if the current game is not using any mods, and entering any console commands during a game will disable the unlocking of any achievements for that map.</p>
 
 </p>
@@ -68,17 +70,17 @@ Achievements can only be reported to steam if the current game is not using any 
 
 <h2>Better Rail Building</h2>
 <p>The old system of building rails has been completely redone, and now all rails are placed using the rail planner. Once you place a piece of rail, you can then click over it, and begin using the rail planner.</p>
-<div class="image-wrap"><video  autoplay loop width=960px><source src="img/new-features-013/manual-rail-planner.webm" type="video/webm"></video></div>
+<div class="image-wrap"><video  autoplay loop width=960 height=540><source src="img/new-features-013/manual-rail-planner.webm" type="video/webm"></video></div>
 <p>The rail planner will try to find a path from the initial rail, and the position of your mouse cursor.
  By clicking on a rail piece, while holding a rail in your cursor, you will enter manual rail building mode, where you can only find paths up to 10 rails long.<br>
  If you hold shift while you click on the rail, you enter the ghost rail planning mode. When in this mode you can search for paths of any length, between the initial rail and the mouse cursor, and when you click again it will lay ghosts in the path that was planned.</p>
- <div class="image-wrap"><video  autoplay loop width=960px><source src="img/new-features-013/ghost-rail-planner.webm" type="video/webm"></video></div>
+<div class="image-wrap"><video  autoplay loop width=960 height=540 ><source src="img/new-features-013/ghost-rail-planner.webm" type="video/webm"></video></div>
  <p>By holding shift while searching of a path in ghost-place mode,it will ignore any trees that are in the way, and mark them for deconstruction if they are in the way of any planned rail. Pressing the rotate key while holding the ghost planner will find solutions for a rotated final rail.<br>
  As you can see the rail planner can make extremely complex and unique rail designs possible, and allows for easy and intuitive building of your rail network.</p>
  
 
 
-<h2>Train Conditions</h2>
+<h2>Train Wait Conditions</h2>
 <p>The new train conditions allow you to more precisely control when a train will leave a station. These simple, yet powerful conditions allow greater flexibility and efficiency of your rail system, while simplifying some of the frustrating and unintuitive aspects of previous train schedule management.</p>
 <div class="image-wrap"><br><img src="img/new-features-013/wait-condition.jpg"></div>
 
@@ -103,87 +105,102 @@ Achievements can only be reported to steam if the current game is not using any 
 <img src="img/new-features-013/train-gui.jpg">
 </div>
 <h2>Train and rail placement idicators</h2>
-<p>- Rail signal placement indicator. (https://www.factorio.com/blog/post/fff-134)
-- Indicator of train vehicle positions in a station when building next to track where would the train stop.</p>
+
 <p>The Signal placement indicator is a small visual aid to more easily see where on your rails it makes sense to place signals. The available locations will show as green squares, and will respect the direction of your 1-way systems. This makes it easy to see if you have made any mistakes or miscalculations when building your rail junctions, and will make the system easier to become familiar with.
 <div class="image-wrap">
 <img src="img/new-features-013/signal-placement-indicator.jpg">
 </div>
-
-<h2> Blueprint improvements</h2>
-<p><strong>Blueprint book</strong> <br>
-The new blueprint book will allow you to store up to 60 blueprints in a single item, useful to store and manage your blueprints, without sacrificing a large amount of your inventory space.</p>
+<p>
+The train position indicator will highlight an outline of where wagons will align to the tracks relative to a train stop or signal.
+</p>
 <div class="image-wrap">
-<img src="img/new-features-013/blueprint-book.jpg">
+<img src="img/new-features-013/train-position-indicator.jpg">
 </div>
 
-<p>Blueprints can now be edited after they have been created,you can remove entites frm the blueprint, change the name and edit the icon. To remove an entity, simply right-click on it in the blueprint gui, and to un-remove it, left-click on its ghost. Blueprints can also toggle whether to include modules, entities and tiles.</p> 
+<h2> Blueprint improvements</h2>
+<p>
+The new blueprint book will allow you to store up to 30 blueprints in a single item, useful to store and manage your blueprints, without sacrificing a large amount of your inventory space. You can have multiple books in your inventory, and can edit their names.</p>
+<div class="image-wrap">
+<img src="img/new-features-013/blueprint-book-1.jpg">
+</div>
+
+<p>Blueprints can now be edited after they have been created, you can remove entites frm the blueprint, change the name and edit the icon. To remove an entity, simply right-click on it in the blueprint gui, and to un-remove it, left-click on its ghost. Blueprints can also toggle whether to include modules, entities and tiles.</p> 
 <div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/blueprint-edit-2.webm" type="video/webm"></video></div>
 <div class="image-wrap">
 <img src="img/new-features-013/blueprint-includes.jpg">
 </div>
-<p>Instead of 3 titles, these three are in a single heading: Blueprint book, Blueprints can be edited and Modules in blueprints</p>
 
+<h2>Technology Tree</h2>
+<p>The new technology tree will show the prerequisite technologies and any that require this technology. </p>
+<div class="image-wrap">
+<img width=956 height=536 src="img/new-features-013/technology-tree.jpg">
+</div>
+<p>
+By highlighting a technology, it will show the path for the required technologies and those which it allows. By clicking on a different technology icon, it will switch focus to that technology. This system will adapt for any new mods you add to the game.
+</p>
 
 <h2>Search in gui</h2>
-<p>There is a new search feature in the crafting menu and train gui, which will search through all the recipes, even any mods, and will show only those which fit the search term. You can access the search by click on the magnifyer icon or by pressing CONTROL + F.
+<p>There is a new search feature in the technology menu, crafting menu and train gui, which will search through all the recipes, even any mods, and will show only those which fit the search term. You can access the search by click on the magnifyer icon or by pressing CONTROL + F.
 </p>
 
 <div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/crafting-search.webm" type="video/webm"></video></div>
 
 <h2>Added fire system</h2>
-<p>The new fire system in 0.13 allows for a level of automated environmental destruction previously impossible. Watch as entire forests ignite and burn with flames, as the local inhabitants succumb to the heat. The new fire damages all around it, and spreads itself among trees. This powerful new system is very effective for clearing out large areas of enemies.<br>
-The handheld flamthrower and flamethrower turret both shoot a stream of burning fluid toward the enemy, which combusts into a blazing wall when it hits the ground. Any enemies caught in it will catch on fire and take large amounts of damage, any trees near the fire will also start to burn. There is no way to stop the fire, except for cutting down any trees in its path. Burning trees can release huge amounts of pollution, so be careful not to overdo it, or you might be the one feeling the heat.</p>
+<p>The new fire system in 0.13 allows for a level of automated environmental destruction previously impossible. Watch as entire forests ignite and burn with flames, as the local inhabitants succumb to the heat. The new fire damages all around it, and spreads itself among trees. This powerful new system is very effective for clearing out large areas of enemies.</p>
+<div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/flamethrower-2.webm" type="video/webm"></video></div>
+<p>The handheld flamthrower and flamethrower turret both shoot a stream of burning fluid toward the enemy, which combusts into a blazing wall when it hits the ground. Any enemies caught in it will catch on fire and take large amounts of damage, any trees near the fire will also start to burn. There is no way to stop the fire, except for cutting down any trees in its path. Burning trees can release huge amounts of pollution, so be careful not to overdo it, or you might be the one feeling the heat.</p>
 
+<h2> Stack inserter and Inserter changes</h2>
 
-<h2>Small sidebar gui containing buttons for main menu, production statistics, etc.</h2>
-<div class="image-wrap">
-<img src="img/new-features-013/sidebar-gui.jpg">
-</div>
+<p>
+The new stack inserter brings with it a new mechanic for how inserters move items to and from belts. Before they would only pickup a single item, now all inserters can grab and place multiple items on belts at the same time.
+</p>
+<div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/normal-inserter-3.webm" type="video/webm"></video></div>
+<p> The new stack inserter is a specialized and powerful addition to the range of inserters, allowing a maximum of 12 items placed or picked up from a belt in a single rotation. It has a large cost and power usage, but it is a must have for any high capacity setups.
+</p>
+<div class="image-wrap"><video  autoplay loop><source src="img/new-features-013/stack-inserter.webm" type="video/webm"></video></div>
+<p>The stack size research will affect all types of inserters, with technology increasing the stack size capacity, and only intermittent levels increasing general inserter levels.
+<br>
+There is also the stack filter inserter, combining the stack inserters massive throughput and the filter inserters ability to only move certain items.</p>
+
 <h2>Circuit network improvements</h2>
 
-<ul>
-   <li> Power switch, can be used to control the energy flow. Power switch can be connected to the circuit network.
-   <li> Roboport is connectable to the circuit network. It sends the logistic network contents or the robot statistics of the network.
-   <li> Accumulator is connectable to the circuit network. It sends it's charge level as a percentage.
-   <li> Transport Belt is connectable to the circuit network. It can be turned on or off and it can send it's contents to the circuit network.
-   <li> Rail Signal is connectable to the circuit network.  It will send the signal's state and can block trains from passing.
-   <li> Gate can be controlled through the circuit network by connecting to the wall next to it. It can be opened manually or send a signal if the player is nearby.
-   <li> Requester chest's requested items can be set automatically from the circuit network.
-   <li> Inserters can now send the item held in hand to the circuit network. Smart inserter can have it's filters set automatically from the circuit network.
-   <li> Most entities that can be turned on or off by the circuit network can also be turned on or off by directly using a logistic condition.
-   <li> Connected Red/Green wires are highlighted when hovering over a combinator or entity connected to the circuit network.
-   <li> Combinators input and output arrows in alt mode. Additional alt mode information can be turned on in the options menu.
-   <li> More virtual signals.
-   <li> The constant combinator has an on/off switch.
-   <li> New combinator graphics.
-   <li> Constant combinator can be rotated.
-   <li> All types of inserters can be controlled by the circuit and logistic network, once the respective network is researched.
-   <li> All types of chests can be connected to the circuit network. Smart Chest was removed from the game.
-   <li> Circuit network and logistic network conditions can now be accessed by icons in the top<li>right corner of the entity's GUI, for all entities.
-   <li> Decider combinator "input count" option makes the combinator copy the count of the specified output signal from the input signals,
-     instead of copying the count from the condition. This might break some setups. https://forums.factorio.com/13706
-   <li> Less memory usage for entities that are connectable to the circuit network.
-   <li> Added LuaCircuitNetwork readable off entities with circuit network connections and through control behaviours.
- </ul>
+<p>
+The 0.13 update brings with it a large number of additions and changes to the circuit network system. Most notable is allowing more entities to be connected to the circuit network. Connecting an entity now also shows a small connector sprite, to allow you to more easily see what you have connected. These entities can also be connected to a logistic network if they are within range.
+</p>
+<div class="image-wrap">
+<img src="img/new-features-013/circuit-network.jpg">
+</div>
+<p>There is also the addition of the circuit network entity gui, which is a way to easily change and configure the behaviour of a connected entity.
+</p>
+<div class="image-wrap">
+<img src="img/new-features-013/circuit-network-gui.jpg">
+</div>
+<p>
+There is also the addition of the new power switch. This can be used to manually or automatically connect and disconnect multiple electric networks. This is especially useful for implementing emergency backup power, but can be used flexibly for any number of tasks.
+</p>
+<p>
+With these changes comes some removals. Since all inserters and chests can now be connected to the circuit network, the smart chest and smart inserter have both been removed. The smart inserter has no been replaced by the filter inserter, and any chest can match the smart chests functionality.
+</p>
       
-      <h2>New Tiles</h2>
-      <p>    - Added yellow/black striped concrete tile that is rotatable.
-    - Added landfill, it can be used to replace water areas by grass.</p>
+      
     
-    <h2>Improvements to the Electric network and Production GUI</h2>
-    <p>Added the ability to filter out things.
-      Added the ability to view "all" information recorded.
-      Made the GUI scrollable.</p>
+<h2>Improvements to the Electric network and Production GUI</h2>
+
+<p>
+The produciton and electric network info guis can now be filtered by item. By left clicking on a item icon, only that item will be shown, and by right clicking you will exclude only that item from the graph. You can toggle items on and off as you wish, and reset them with the top right button.
+</p>
+<div class="image-wrap"><video  autoplay loop ><source src="img/new-features-013/production-gui-3.webm" type="video/webm"></video></div>
+
+<p>
+You can also see a display of the total number of items ever produced, using the new 'all' tab.
+</p>
+<div class="image-wrap">
+<img src="img/new-features-013/production-gui-all.jpg">
+</div>
       
     <h2>Other Tweaks and Additions</h2>
-    <p>
-    Improved car handling: The car's rate of turn changes smoothly and steering is less sensitive at high speeds, making driving in a straight line easier.
-      
-      Turret displays its range when you hover over it.
-Armors have inventory size bonuses. (10 for modular armor, 20 for power armor, 30 for power armor mk2)
-
-Added cluster grenades and grenade upgrades.
+    <p>Find out the full list of changes on the changelog when it is released.<a href=""></a>
 </p>
 
 
