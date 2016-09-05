@@ -62,6 +62,26 @@ title: Circuit network
 
 <p>One last very important thing to note about the Decider Combinator and the Arithmetic Combinator is that they don't read colors of wires. In other words, if you have a Red and Green wire both going from one thing to the Combinator it will sum the inputs of them together. So if you are only hooking it up to one thing, you only need one color wire, using two will essentially double the input since it is summed from both wires.</p> 
 
+<h2>Circuit network improvements of 0.13</h2>
+
+<p>
+The 0.13 update brings with it a large number of additions and changes to the circuit network system. Most notable is allowing more entities to be connected to the circuit network. Connecting an entity now also shows a small connector sprite, to allow you to more easily see what you have connected. These entities can also be connected to a logistic network if they are within range.
+</p>
+<div class="image-wrap">
+<img src="img/new-features-013/circuit-network.jpg">
+</div>
+<p>There is also the addition of the circuit network entity gui, which is a way to easily change and configure the behaviour of a connected entity.
+</p>
+<div class="image-wrap">
+<img src="img/new-features-013/circuit-network-gui.jpg">
+</div>
+<p>
+There is also the addition of the new power switch. This can be used to manually or automatically connect and disconnect multiple electric networks. This is especially useful for implementing emergency backup power, but can be used flexibly for any number of tasks.
+</p>
+<p>
+With these changes comes some removals. Since all inserters and chests can now be connected to the circuit network, the smart chest and smart inserter have both been removed. The smart inserter has no been replaced by the filter inserter, and any chest can match the smart chests functionality.
+</p>
+      
 
 <div class="xtrainfo">
 <p>There are multiple links below that help explain actual uses for Combinators. Some are videos and some are forum posts or articles that explain it.</p>

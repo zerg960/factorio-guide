@@ -43,7 +43,7 @@ main, #title, #logo {
     box-sizing: border-box;
     float: left;
     width: 100%;
-    padding-left: 280px;
+    padding-left: 256px;
     padding-top: 1em;
 }
 
@@ -51,17 +51,17 @@ section, #title, #logo {
     box-sizing: border-box;
     float: left;
     width: 100%;
-    padding-left: 1em;
+    padding-left: 256px;
     padding-top: 1em;
 }
 
 #nav {
-    background: #4e4e4e none repeat scroll 0 0;
+    
     position: fixed;
     left: 0;
     top: 128px;
     bottom: 0;
-    width: 256px;
+    width: 232px;
     padding-left: 24px;
     overflow: auto;
 }
@@ -82,7 +82,7 @@ section, #title, #logo {
 }
 
 #content {
-    margin-top: 152px;/* same as header height */
+    margin-top: 96px;
     padding-bottom: 100px; /* same as footer height */
     scroll-behavior: auto; /* just in case */
     max-width: 95%;

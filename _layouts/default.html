@@ -9,18 +9,14 @@
     </head>
 
     <body>
-
-        <header id="header">
-            <div id="band"><img src="img/gfx/version-band.png" width="115" height="115"></div>
-            <div id="logo">
-                <img src="img/gfx/factorio-logo.png" width="454" height="69">
-                <div id="logo-text"><strong>Players strategy guide</strong></div>
-            </div>
-            <div id="title"><h1>{{ page.title }}</h1></div>
-        </header>
-
+        <div id="logo">
+            <img src="img/gfx/factorio-logo.png" width="454" height="69">
+            <div id="logo-text"><strong>Players strategy guide</strong></div>
+        </div>
+        
         <main>
-            <div id="content">
+            <div id="content"> 
+            <div id="logo-text">{{ page.title }}</div></br>
                     {{ content }}
             </div>
         </main>
