@@ -56,7 +56,6 @@ section, #title, #logo {
 }
 
 #nav {
-    
     position: fixed;
     left: 0;
     top: 128px;
@@ -64,6 +63,11 @@ section, #title, #logo {
     width: 232px;
     padding-left: 24px;
     overflow: auto;
+}
+
+nav li.active a {
+    background-color: #deaa71;
+    color: #4e4e4e;
 }
 
 #footer {
